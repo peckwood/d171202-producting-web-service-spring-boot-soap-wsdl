@@ -24,10 +24,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 		<dependency>
@@ -72,6 +68,7 @@
 					<!-- The package of your generated sources -->
 					<packageName>io.spring.guides.gs_producing_web_service</packageName>
 					<encoding>UTF-8</encoding>
+					<sourceType>xmlschema</sourceType>
 					<sources>
 						<source>src/main/resources/countries.xsd</source>
 					</sources>
