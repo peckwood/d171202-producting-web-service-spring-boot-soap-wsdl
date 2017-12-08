@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons xmlns="http://www.example.org/family" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/family family.xsd ">
+	<full_name>full_name</full_name>
+	<child_name>child_name</child_name>
+	<child_name>child_name3</child_name>
+	<child_name>child_name2</child_name>
+	<child_name>child_name1</child_name>
+	<child_name>child_name1</child_name>
+</persons>

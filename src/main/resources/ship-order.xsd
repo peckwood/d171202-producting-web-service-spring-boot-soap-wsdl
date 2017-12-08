@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ship-order"
+	xmlns:tns="http://www.example.org/ship-order" elementFormDefault="qualified">
+	<element name="shiporder">
+		<complexType>
+			<sequence>
+				<element name="orderperson" type="token"></element>
+				<element name="shipto" type="tns:shiptoType"></element>
+				<element name="item" type="tns:itemType" maxOccurs="5"></element>
+			</sequence>
+			<attribute name="orderid" type="integer" use="required"></attribute>
+		</complexType>
+	</element>
+
+	<complexType name="shiptoType">
+		<sequence>
+				<group ref="tns:shipping-address"></group>
+			</sequence>
+	</complexType>
+	<group name="shipping-address">
+		<sequence>
+			<element name="name" type="token"></element>
+			<element name="address" type="token"></element>
+			<element name="city" type="token"></element>
+			<element name="country" type="token"></element>
+		</sequence>
+	</group>
+	<complexType name="itemType">
+			<sequence>
+				<element name="title" type="token"></element>
+				<element name="note" type="token" minOccurs="0"></element>
+				<element name="quantity" type="integer"></element>
+				<element name="price" type="decimal"></element>
+			</sequence>
+		</complexType>
+</schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/family"
+	xmlns:tns="http://www.example.org/family" elementFormDefault="qualified">
+	<element name="persons" type="tns:personType">
+	</element>
+			<complexType name="personType">
+			<sequence>
+				<element name="full_name" type="string" minOccurs="1"></element>
+				<element name="child_name" type="string" maxOccurs="5"></element>
+			</sequence>
+		</complexType>
+</schema>
