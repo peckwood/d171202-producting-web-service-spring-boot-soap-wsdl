@@ -1,4 +1,15 @@
-### Producing a SOAP web service with Spring Boot
+## Producing a SOAP web service with Spring Boot
+
+d171202-producting-web-service-spring-boot-soap-wsdl
+
+### Features
+
+- Inheriting from Spring Boot
+- Spring Web Service or Spring WS
+- Recommended approach by Spring official
+- Developed based on a Maven Quickstart project rather than a webapp project
+
+### Steps
 
 1. You don't need a webapp project, a maven quickstart project is sufficient
 
@@ -136,6 +147,8 @@
       2. If you visit <http://localhost:8080/ws/countries.wsdl>, the `soap:address` will have the proper address. If you instead visit the WSDL from the public facing IP address assigned to your machine, you will see that address instead.
 
 > [this project on github](https://github.com/peckwood/d171202-producting-web-service-spring-boot-soap-wsdl)
+>
+> See also [d171212_producing_web_service_webapp_without_spring_boot_multiple_operations_multiple_artifacts](https://github.com/peckwood/d171212_producing_web_service_webapp_without_spring_boot_multiple_operations_multiple_artifacts)
 >
 > [official Sping guide](https://spring.io/guides/gs/producing-web-service/)
 >
