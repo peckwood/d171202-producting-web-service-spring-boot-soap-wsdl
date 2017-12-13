@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/countries"
-	xmlns:tns="http://www.example.org/countries" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://raidencentral.com/countries"
+	xmlns:tns="http://raidencentral.com/countries" elementFormDefault="qualified">
 	
 <element name="getCountryRequest">
 	<complexType>

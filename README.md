@@ -45,7 +45,7 @@
    <!-- The package of where wanted the generated code to be in -->
    <!-- Generated classes are placed in target/generated-sources/jaxb/ directory -->
    <!-- if there are already classes with the same name inside the same packages in main, "mvn package" will cause "Type ... is already defined" -->
-   					<packageName>io.spring.guides.gs_producing_web_service</packageName>
+   					<packageName>hello.artifacts</packageName>
    					<encoding>UTF-8</encoding>
                          <sourceType>xmlschema</sourceType>
    					<sources>
@@ -69,7 +69,7 @@
    ```java
    @Endpoint
    public class CountryEndpoint {
-   	private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+   	private static final String NAMESPACE_URI = "http://raidencentral.com/countries";
      	@Autowired
    	private CountryRepository countryRepository;
 
@@ -114,7 +114,7 @@
    		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
    		wsdl11Definition.setPortTypeName("CountriesPort");
    		wsdl11Definition.setLocationUri("/ws");
-   		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+   		wsdl11Definition.setTargetNamespace("http://raidencentral.com/countries");
    		wsdl11Definition.setSchema(countriesSchema);
    		return wsdl11Definition;
    	}
@@ -135,11 +135,11 @@
          Defaults to `false`.
       2. If you visit <http://localhost:8080/ws/countries.wsdl>, the `soap:address` will have the proper address. If you instead visit the WSDL from the public facing IP address assigned to your machine, you will see that address instead.
 
-> [my project on github](https://github.com/peckwood/d171202-producting-web-service-spring-boot-soap-wsdl)
+> [this project on github](https://github.com/peckwood/d171202-producting-web-service-spring-boot-soap-wsdl)
 >
-> [guide](https://spring.io/guides/gs/producing-web-service/)
+> [official Sping guide](https://spring.io/guides/gs/producing-web-service/)
 >
-> [guide project](https://github.com/spring-guides/gs-producing-web-service)
+> [official Sping guide project](https://github.com/spring-guides/gs-producing-web-service)
 >
 > [XML Schema Reference w3cschools](https://www.w3schools.com/xml/schema_elements_ref.asp)
 >
@@ -147,6 +147,5 @@
 >
 > - [stackoverflow: How to create the class java from WSDL in jaxb2-maven-plugin version 2?](https://stackoverflow.com/questions/44955247/how-to-create-the-class-java-from-wsdl-in-jaxb2-maven-plugin-version-2)
 > - [stackoverflow: JAXB maven plugin not generating classes](https://stackoverflow.com/a/35243025/986966)
-> - [example of generating from wsdl](https://gist.github.com/uttesh/a59dd0b31f44af23d201)
 > - [memorynotfound: Generate Java Classes From XSD](https://memorynotfound.com/generate-java-classes-from-xsd/)
 > - [official Basic XJC example](http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/example_xjc_basic.html)

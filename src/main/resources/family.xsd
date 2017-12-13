@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/family"
-	xmlns:tns="http://www.example.org/family" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://raidencentral.com/family"
+	xmlns:tns="http://raidencentral.com/family" elementFormDefault="qualified">
 	<element name="persons" type="tns:personType">
 	</element>
 			<complexType name="personType">

@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework</groupId>
-	<artifactId>d171202-gs-producting-web-service</artifactId>
+	<artifactId>d171202-producting-web-service-spring-boot-soap-wsdl</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -20,7 +20,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<version>1.5.9.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -60,13 +59,13 @@
 					<execution>
 						<id>xjc</id>
 						<goals>
-							<goal>xjc</goal>
+							<!-- <goal>xjc</goal> -->
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
 					<!-- The package of your generated sources -->
-					<packageName>io.spring.guides.gs_producing_web_service</packageName>
+					<packageName>hello.artifacts</packageName>
 					<encoding>UTF-8</encoding>
 					<sourceType>xmlschema</sourceType>
 					<sources>

@@ -2,11 +2,11 @@
 // 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
 // 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // 在重新编译源模式时, 对此文件的所有修改都将丢失。
-// 生成时间: 2017.12.07 时间 08:50:13 PM CST 
+// 生成时间: 2017.12.13 时间 10:46:06 AM CST 
 //
 
 
-package io.spring.guides.gs_producing_web_service;
+package hello.artifacts;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="population" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="capital" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="currency" type="{http://www.example.org/countries}currency"/&gt;
+ *         &lt;element name="currency" type="{http://raidencentral.com/countries}currency"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;

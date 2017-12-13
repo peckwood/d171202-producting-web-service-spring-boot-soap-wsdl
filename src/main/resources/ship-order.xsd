@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/ship-order"
-	xmlns:tns="http://www.example.org/ship-order" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://raidencentral.com/ship-order"
+	xmlns:tns="http://raidencentral.com/ship-order" elementFormDefault="qualified">
 	<element name="shiporder">
 		<complexType>
 			<sequence>
